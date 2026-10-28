@@ -1,0 +1,33 @@
+overall_accuracy	0.9976
+[Hybrid (deployed)] fpr_normal	0.0040
+[Hybrid (deployed)] recall_spoofing	1.0000
+[Hybrid (deployed)] recall_flooding	1.0000
+[Hybrid (deployed)] recall_delay	1.0000
+[ML AND Rule (previous)] fpr_normal	0.0040
+[ML AND Rule (previous)] recall_spoofing	1.0000
+[ML AND Rule (previous)] recall_flooding	0.0167
+[ML AND Rule (previous)] recall_delay	1.0000
+[Rule-only] fpr_normal	0.2372
+[Rule-only] recall_spoofing	1.0000
+[Rule-only] recall_flooding	1.0000
+[Rule-only] recall_delay	1.0000
+[ML-only] fpr_normal	0.0102
+[ML-only] recall_spoofing	1.0000
+[ML-only] recall_flooding	0.0167
+[ML-only] recall_delay	1.0000
+
+normal_replay (262 s of recorded driving, in order)
+  false_alarms	2
+  without_2in1s_confirmation	11
+
+latency_per_episode
+  ep1	spoofing	0.000s
+  ep2	flooding	0.000s
+  ep3	delay	0.000s
+  ep4	spoofing	0.000s
+  ep5	flooding	0.000s
+  ep6	delay	0.000s
+  ep7	spoofing	0.000s
+  ep8	flooding	0.000s
+  ep9	delay	0.000s
+  ep10	spoofing	0.000s

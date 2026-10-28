@@ -1,0 +1,61 @@
+# stealth-attack sweep: detection rate / median latency (s)
+# 40 episodes per point, attack 5.0 s, grace 1.0 s, warmup 15.0 s
+# teleop false-alarm chance per window (no attack): 0.100
+
+[flooding]  missed>=50% up to: 38.0
+        0	det 0.000	false-alarm 0.100	latency -
+       10	det 0.000	false-alarm 0.200	latency -
+       20	det 0.000	false-alarm 0.325	latency -
+       30	det 0.000	false-alarm 0.175	latency -
+       35	det 0.000	false-alarm 0.225	latency -
+       38	det 0.300	false-alarm 0.200	latency 1.42
+       40	det 1.000	false-alarm 0.150	latency 1.00
+       42	det 1.000	false-alarm 0.200	latency 0.95
+       45	det 1.000	false-alarm 0.150	latency 0.89
+       50	det 1.000	false-alarm 0.050	latency 0.80
+       60	det 1.000	false-alarm 0.075	latency 0.67
+      100	det 1.000	false-alarm 0.050	latency 0.40
+      500	det 1.000	false-alarm 0.000	latency 0.08
+
+[delay]  missed>=50% up to: 0.95
+        0	det 0.000	false-alarm 0.100	latency -
+      0.2	det 0.000	false-alarm 0.350	latency -
+      0.4	det 0.000	false-alarm 0.350	latency -
+      0.6	det 0.000	false-alarm 0.250	latency -
+      0.8	det 0.000	false-alarm 0.250	latency -
+      0.9	det 0.000	false-alarm 0.275	latency -
+     0.95	det 0.000	false-alarm 0.300	latency -
+        1	det 1.000	false-alarm 0.000	latency 1.05
+     1.05	det 1.000	false-alarm 0.000	latency 1.09
+      1.1	det 1.000	false-alarm 0.050	latency 1.15
+      1.2	det 1.000	false-alarm 0.025	latency 1.26
+      1.5	det 1.000	false-alarm 0.000	latency 1.54
+        2	det 1.000	false-alarm 0.000	latency 2.04
+
+[spoof_linear]  missed>=50% up to: 0.3
+        0	det 0.000	false-alarm 0.100	latency -
+      0.1	det 0.000	false-alarm 0.125	latency -
+      0.2	det 0.000	false-alarm 0.200	latency -
+      0.3	det 0.000	false-alarm 0.150	latency -
+      0.4	det 1.000	false-alarm 0.000	latency 0.29
+      0.5	det 1.000	false-alarm 0.000	latency 0.31
+     0.55	det 1.000	false-alarm 0.000	latency 0.22
+      0.6	det 1.000	false-alarm 0.000	latency 0.25
+      0.8	det 1.000	false-alarm 0.000	latency 0.23
+        1	det 1.000	false-alarm 0.000	latency 0.28
+        2	det 1.000	false-alarm 0.025	latency 0.22
+        3	det 1.000	false-alarm 0.025	latency 0.23
+
+[spoof_angular]  missed>=50% up to: 3.0
+        0	det 0.000	false-alarm 0.100	latency -
+      0.5	det 0.000	false-alarm 0.200	latency -
+        1	det 0.000	false-alarm 0.150	latency -
+      1.5	det 0.075	false-alarm 0.275	latency 4.51
+        2	det 0.050	false-alarm 0.150	latency 4.10
+      2.5	det 0.100	false-alarm 0.175	latency 3.60
+     2.84	det 0.100	false-alarm 0.100	latency 1.68
+        3	det 0.175	false-alarm 0.150	latency 2.02
+        4	det 1.000	false-alarm 0.000	latency 0.23
+        5	det 1.000	false-alarm 0.025	latency 0.29
+
+[ramp 0->1.5 m/s over 20.0s]  detected 40/40, speed at detection median 0.32 (min 0.30, max 0.34)

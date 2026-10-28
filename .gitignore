@@ -1,0 +1,13 @@
+# 소스(src/)와 README 만 올린다
+/*
+!/src/
+!/README.md
+!/.gitignore
+
+# 백업, 예전 평가 결과, 캐시
+*.bak*
+src/tb3_security/eval_output_before_*/
+src/tb3_security/eval_output/stealth_before_*/
+src/tb3_security/eval_output/stealth_after_*/
+__pycache__/
+*.pyc
